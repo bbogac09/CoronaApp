@@ -22,5 +22,13 @@ namespace CoronaApp
             YardimForm form = new YardimForm();
             form.Show();
         }
+
+        private void belirtiTespitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BelirtiTespitForm form = new BelirtiTespitForm();
+            form.MdiParent = this;
+            form.WindowState = FormWindowState.Maximized;
+            form.Show();
+        }
     }
 }

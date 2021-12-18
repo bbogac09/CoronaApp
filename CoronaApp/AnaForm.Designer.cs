@@ -61,6 +61,7 @@
             this.belirtiTespitToolStripMenuItem.Name = "belirtiTespitToolStripMenuItem";
             this.belirtiTespitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.belirtiTespitToolStripMenuItem.Text = "BelirtiTespit";
+            this.belirtiTespitToolStripMenuItem.Click += new System.EventHandler(this.belirtiTespitToolStripMenuItem_Click);
             // 
             // yüzdeTespitToolStripMenuItem
             // 
@@ -81,6 +82,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaForm";
             this.Text = "CoronaApp";
