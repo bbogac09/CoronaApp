@@ -68,6 +68,7 @@
             this.yüzdeTespitToolStripMenuItem.Name = "yüzdeTespitToolStripMenuItem";
             this.yüzdeTespitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.yüzdeTespitToolStripMenuItem.Text = "Yüzde Tespit";
+            this.yüzdeTespitToolStripMenuItem.Click += new System.EventHandler(this.yüzdeTespitToolStripMenuItem_Click);
             // 
             // yardımToolStripMenuItem
             // 
@@ -86,6 +87,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaForm";
             this.Text = "CoronaApp";
+            this.Load += new System.EventHandler(this.AnaForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

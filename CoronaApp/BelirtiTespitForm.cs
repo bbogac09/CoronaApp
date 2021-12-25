@@ -89,5 +89,24 @@ namespace CoronaApp
         {
             TespitEt();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bTemizle_Click(object sender, EventArgs e)
+        {
+            tbAd.Text = "";
+            tbSoyad.Clear();
+            ddlSehir.SelectedIndex = 0;
+            nudYas.Value = 50;
+            rbKadin.Checked = true;
+            dtpTarih.Value = DateTime.Now;
+            cbAtes.Checked = false;
+            cbBogazAgrisi.Checked = false;
+            cbOksuruk.Checked = false;
+            tbSonuc.Text = "";
+        }
     }
 }

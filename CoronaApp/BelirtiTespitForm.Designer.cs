@@ -43,9 +43,9 @@
             this.rbErkek = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cbAtes = new System.Windows.Forms.CheckBox();
-            this.cbOksuruk = new System.Windows.Forms.CheckBox();
             this.cbBogazAgrisi = new System.Windows.Forms.CheckBox();
+            this.cbOksuruk = new System.Windows.Forms.CheckBox();
+            this.cbAtes = new System.Windows.Forms.CheckBox();
             this.bTespit = new System.Windows.Forms.Button();
             this.bTemizle = new System.Windows.Forms.Button();
             this.tbSonuc = new System.Windows.Forms.TextBox();
@@ -214,17 +214,18 @@
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Belirtiler";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // cbAtes
+            // cbBogazAgrisi
             // 
-            this.cbAtes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbAtes.Location = new System.Drawing.Point(7, 20);
-            this.cbAtes.Name = "cbAtes";
-            this.cbAtes.Size = new System.Drawing.Size(84, 17);
-            this.cbAtes.TabIndex = 0;
-            this.cbAtes.Text = "Ateş";
-            this.cbAtes.UseVisualStyleBackColor = true;
-            this.cbAtes.CheckedChanged += new System.EventHandler(this.cbAtes_CheckedChanged);
+            this.cbBogazAgrisi.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbBogazAgrisi.Location = new System.Drawing.Point(7, 66);
+            this.cbBogazAgrisi.Name = "cbBogazAgrisi";
+            this.cbBogazAgrisi.Size = new System.Drawing.Size(84, 18);
+            this.cbBogazAgrisi.TabIndex = 2;
+            this.cbBogazAgrisi.Text = "Boğaz Ağrısı";
+            this.cbBogazAgrisi.UseVisualStyleBackColor = true;
+            this.cbBogazAgrisi.CheckedChanged += new System.EventHandler(this.cbBogazAgrisi_CheckedChanged);
             // 
             // cbOksuruk
             // 
@@ -237,16 +238,16 @@
             this.cbOksuruk.UseVisualStyleBackColor = true;
             this.cbOksuruk.CheckedChanged += new System.EventHandler(this.cbOksuruk_CheckedChanged);
             // 
-            // cbBogazAgrisi
+            // cbAtes
             // 
-            this.cbBogazAgrisi.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbBogazAgrisi.Location = new System.Drawing.Point(7, 66);
-            this.cbBogazAgrisi.Name = "cbBogazAgrisi";
-            this.cbBogazAgrisi.Size = new System.Drawing.Size(84, 18);
-            this.cbBogazAgrisi.TabIndex = 2;
-            this.cbBogazAgrisi.Text = "Boğaz Ağrısı";
-            this.cbBogazAgrisi.UseVisualStyleBackColor = true;
-            this.cbBogazAgrisi.CheckedChanged += new System.EventHandler(this.cbBogazAgrisi_CheckedChanged);
+            this.cbAtes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbAtes.Location = new System.Drawing.Point(7, 20);
+            this.cbAtes.Name = "cbAtes";
+            this.cbAtes.Size = new System.Drawing.Size(84, 17);
+            this.cbAtes.TabIndex = 0;
+            this.cbAtes.Text = "Ateş";
+            this.cbAtes.UseVisualStyleBackColor = true;
+            this.cbAtes.CheckedChanged += new System.EventHandler(this.cbAtes_CheckedChanged);
             // 
             // bTespit
             // 
@@ -270,6 +271,7 @@
             this.bTemizle.TabIndex = 25;
             this.bTemizle.Text = "Temizle";
             this.bTemizle.UseVisualStyleBackColor = false;
+            this.bTemizle.Click += new System.EventHandler(this.bTemizle_Click);
             // 
             // tbSonuc
             // 

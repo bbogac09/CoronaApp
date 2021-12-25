@@ -30,5 +30,20 @@ namespace CoronaApp
             form.WindowState = FormWindowState.Maximized;
             form.Show();
         }
+
+        private void yüzdeTespitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            YüzdeTespitForm form = new YüzdeTespitForm();
+            form.MdiParent = this;
+            form.WindowState = FormWindowState.Maximized;
+            form.Show();
+        }
+
+        private void AnaForm_Load(object sender, EventArgs e)
+        {
+            HosgeldinForm form = new HosgeldinForm();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
